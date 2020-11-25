@@ -217,7 +217,7 @@ ziplist 整体结构：
 
 1. zlhead
 
-   使用**[字符串编码](# 整数编码)**解码，存储当前 key 所属 value 的 bytes 数目以及是否启用了 lzf 等信息。如 ziplist 以 `1B` 开头，对应 2 进制为 `0b00011011` ，后  6 bit 表示为 十进制 `27` ，表示当前 ziplist 共有 27 bytes。从 <zlbytes> 开始读取直到 <zlend>。
+   使用**[字符串编码](####字符串编码)**解码，存储当前 key 所属 value 的 bytes 数目以及是否启用了 lzf 等信息。如 ziplist 以 `1B` 开头，对应 2 进制为 `0b00011011` ，后  6 bit 表示为 十进制 `27` ，表示当前 ziplist 共有 27 bytes。从 <zlbytes> 开始读取直到 <zlend>。
 
 2. zlbytes
 
@@ -334,6 +334,6 @@ ziplist 整体结构：
 
 1. [redis-rdb-tools 作者关于 rdb 文件格式的阐释](https://github.com/sripathikrishnan/redis-rdb-tools/wiki/Redis-RDB-Dump-File-Format)
 2. [redis-rdb-tools 作者关于 rdb 文件变更历史的说明](https://github.com/sripathikrishnan/redis-rdb-tools/blob/master/docs/RDB_Version_History.textile)
-3. [另一个 rdb 文件格式说明2](https://rdb.fnordig.de/file_format.html)
+3. [另一个 rdb 文件格式说明](https://rdb.fnordig.de/file_format.html)
 4. [另一个 rdb 文件历史说明](https://rdb.fnordig.de/version_history.html)
 5. [ziplist 格式说明](http://zhangtielei.com/posts/blog-redis-ziplist.html)
