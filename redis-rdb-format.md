@@ -26,8 +26,8 @@ redis 支持的操作符列表
 | ---- | ------------ | ------------------------------------------------------------ |
 | 0xFF | EOF          | rdb 文件结束符                                               |
 | 0xFE | SELECTDB     | redis [数据库编号](#数据库编号)                          |
-| 0xFD | EXPIRETIME   | redis [过期时间](#1. key 过期时间)，使用秒表示。        |
-| 0xFC | EXPIRETIMEMS | redis [过期时间](#1. key 过期时间)，使用毫秒表示。    |
+| 0xFD | EXPIRETIME   | redis [过期时间](#1-key-过期时间)，使用秒表示。        |
+| 0xFC | EXPIRETIMEMS | redis [过期时间](#1-key-过期时间)，使用毫秒表示。    |
 | 0xFB | RESIZEDB     | redis [dbsize](#RESIZEDB)，描述 key 数目和设置了过期时间 key 数目 |
 | 0xFA | AUX          | redis [元属性](#AUX metadata)，可以存储任意的的 key-value 对 |
 
