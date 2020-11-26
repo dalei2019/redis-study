@@ -329,7 +329,7 @@ ziplist 整体结构：
    00000090   76 33 FF FF  A6 10 58 3C  59 B4 AB 4E  v3....X<Y..N
    </code></pre>
 1. 解析文件
-  ![](images/redis-rdb-format-example.png?raw=true)
+  ![](../images/redis-rdb-format-example.png?raw=true)
 ## 参考文章
 
 1. [redis-rdb-tools 作者关于 rdb 文件格式的阐释](https://github.com/sripathikrishnan/redis-rdb-tools/wiki/Redis-RDB-Dump-File-Format)
